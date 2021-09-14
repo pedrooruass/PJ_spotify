@@ -1,0 +1,105 @@
+# ------------------------------- Fake Spotify ------------------------------- #
+# ----- 1- HomeScreen -------------------------------------------------------- #
+
+- Put a loading screen with the logo for 2 sec;
+
+- Scaffold {
+    backgroundColor{
+        Gradient betwen grey.shadeSOMETHING && white ||
+        all grey.shadeSOMETHING and a small ball white in positioned on top left in a stack,
+    }
+    appBar Personalizate a little bit down{
+        title: "Good Evening",
+        2 icons buttons in the end,
+    },
+
+    body {
+        
+        6 playlist {
+            Column{
+                Rows{
+                    Tiles{
+                        q direcionam para a segunda pagina
+                    }
+                }
+            }
+        },
+
+        circular Artist {
+            Tile{
+               leading: AspectRatio.circular,
+               title: "New release",
+               subtitle name,
+            }
+        },
+
+        Random music {
+            Container circular {
+                Tile{
+                    l: Image,
+                    title: music name,
+                    subtitle: the singer name,
+                    act: icon play,
+                }
+            }
+        },
+    },
+
+
+    bottomNavigationBar {
+        three screens,
+    },
+}
+# ----- 2- PlayListScreen -------------------------------------------------------- #
+- ListView{
+    backgroundColor{
+        Gradient betwen color recive in the Json && black.lowshade,
+    }
+
+    (Widget) in 1 to be square{
+    put the Image.cover,
+    }
+
+    SizedBox(height: 10),
+    
+    Text("Name of the playlist"),
+
+    SizedBox(height: 10), || put the text up in a padding.symetric(vertical),
+
+    Row{
+        Image.circularShape,
+        SizedBox(horizontal: 5),
+        Text("UserId"),
+    }
+
+    Row {
+        3 Icons(
+            hart one when clicked change to fulled hart,
+        ),
+
+        A big button{
+            GestureDetector(
+                Container{
+                    decoration{
+                        shape: BoxShape.circular,
+                    }
+                    child: Icon,
+                }
+            )
+        }
+
+        Expanded{
+            ListView{
+                Tiles coming from JSON{
+                    l: Image,
+                    title: music name,
+                    subtitle: singer,
+                    act: icon.treeDots,
+                }
+            }
+        }
+    }
+
+
+
+}
