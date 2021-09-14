@@ -1,4 +1,4 @@
-# fake_spotify
+# spotify
 
 A new Flutter project.
 
